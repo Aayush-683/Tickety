@@ -33,3 +33,9 @@ module.exports = {
 		});
 	},
 };
+
+// to add a custom role copy this and paste it as explained in the video and replace role-id with the role ya want :D
+// {
+					id: message.guild.roles.cache.get("801032280491556924"),
+					allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
+				}
