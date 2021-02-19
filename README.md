@@ -1,4 +1,4 @@
-# 🎫 Ticket Bot
+# 🎫 Ticket Bot By BlackKnight683
 
 ## ❔ About
 This is a simple ticket bot created for a video and as per demand on my [Youtube Channel](https://youtube.com/c/BlackKnight683) :P
