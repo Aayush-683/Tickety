@@ -4,7 +4,7 @@
 This is a simple ticket bot created for a video and as per demand on my [Youtube Channel](https://youtube.com/c/BlackKnight683) :P
 It was made in what like 2 days so don't expect some super cool features.....
 
-+ Find a super cool feature ticket bot in my [Discord server](https://discord.gg/S2GGa23) or in the tickety branch
++ Find a super cool feature ticket bot in my [Discord server](https://discord.gg/S2GGa23)
 
 ## 💬 Commands
 
