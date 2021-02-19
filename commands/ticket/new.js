@@ -21,10 +21,6 @@ module.exports = {
 					id: message.guild.roles.everyone,
 					deny: ['VIEW_CHANNEL'],
 				},
-        {
-					id: message.guild.roles.cache.get("800722115908993025"),
-					allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
-				}
 			],
 			type: 'text',
 		}).then(async channel => {
