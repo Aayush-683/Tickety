@@ -18,8 +18,12 @@ new | Creates a new ticket.
 open | Re-opens a ticket.
 ping | Shows the bot's latency.
 remove | Removes a member to a specified ticket.
-transcript | Trascripts a specified ticket.
 uptime | Grabs the uptime of the bot.
+
+## Startup Command
+```js
+npm i --production && node index.js
+```
 
 ## 🙋‍Contributing
 If you would like t contribute, please fork this repository and submit a pull request! You can also join the [Discord server](https://discord.gg/S2GGa23) or contact me directly on discord at `•OofyOofOof•#2018`. Anyone is welcome to suggest new features and improve code quality!
