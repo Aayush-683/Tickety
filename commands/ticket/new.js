@@ -21,6 +21,10 @@ module.exports = {
 					id: message.guild.roles.everyone,
 					deny: ['VIEW_CHANNEL'],
 				},
+        {
+					id: message.guild.roles.cache.get("800722115908993025"),
+					allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
+				}
 			],
 			type: 'text',
 		}).then(async channel => {
@@ -36,6 +40,6 @@ module.exports = {
 
 // to add a custom role copy this and paste it as explained in the video and replace role-id with the role ya want :D
 // {
-					id: message.guild.roles.cache.get("801032280491556924"),
-					allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
-				}
+//					id: message.guild.roles.cache.get("role-id"),
+//					allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
+//				}
