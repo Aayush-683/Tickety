@@ -29,11 +29,11 @@ module.exports = {
 					catch(e) {
 						return message.channel.send('An error occurred, please try again!');
 					}
-				});
-			}
+			})
 		}
 		else {
 			return message.reply('you cannot use this command here. Please use this command when you\'re closing a ticket.');
-		}
-	},
-};
+		  }
+	  }
+  }
+}
