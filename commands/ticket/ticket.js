@@ -1,8 +1,8 @@
 module.exports = {
-	name: 'new',
+	name: 'ticket',
 	category: 'Ticket',
 	description: 'Creates a new ticket.',
-	aliases: [],
+	aliases: ['new'],
 	usage: 'new',
 	userperms: [],
 	botperms: [],
