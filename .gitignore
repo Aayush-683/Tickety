@@ -1,3 +1,3 @@
 node_modules
-.eslintrc.json
-.vscode
+token.json
+package-lock.json

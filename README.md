@@ -1,32 +1,45 @@
-# 🎫 Ticket Bot By BlackKnight683
+# Ticket Bot
 
-## ❔ About
-This is a simple ticket bot created for a video and as per demand on my [Youtube Channel](https://youtube.com/c/BlackKnight683) :P
-It was made in what like 2 days so don't expect some super cool features.....
+A discord ticket bot with buttons & slash commands
+- Made in Discord.js v13
 
-+ Find a super cool feature ticket bot in my [Discord server](https://discord.gg/S2GGa23)
+## Installation
 
-## 💬 Commands
+You need to have Node.JS 16+
 
-Command | Description
------------- | -------------
-add | Adds a member to a specified ticket.
-close | Closes the ticket.
-delete | Delete a specified ticket.
-help | Shows the help menu.
-new | Creates a new ticket.
-open | Re-opens a ticket.
-ping | Shows the bot's latency.
-remove | Removes a member to a specified ticket.
-uptime | Grabs the uptime of the bot.
+``````bash
+git clone https://github.com/blackknight683/tickety-v2
+cd tickety-v2
+npm i
+``````
 
-## Startup Command
-```js
-npm i --production && node index.js
+## Configuraton
+
+```json
+//config.json
+{
+  "clientId": "id of the bot",
+  "token": "Discord bot's token",
+
+  "parentOpened": "id of the category when a ticket is opened",
+  "Category1": "Name of the first support category",
+  "Category2": "Name of the second support category",
+  "Category3": "Name of the third support category",
+
+  "roleSupport": "id of the support team role",
+  
+  "logsTicket": "id of the channel for ticket logs",
+  "ticketChannel": "id of the channel where the embed is sent to create a ticket"
+}
 ```
 
-## 🙋‍Contributing
-If you would like t contribute, please fork this repository and submit a pull request! You can also join the [Discord server](https://discord.gg/S2GGa23) or contact me directly on discord at `•OofyOofOof•#2018`. Anyone is welcome to suggest new features and improve code quality!
++ You can change category emojis in `intractionCreate.js` @ line 50.
++ Make sure the `ticketChannel` is empty.
 
-## 📄 License
-This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/zhon12345/Tavern_Keeper/blob/master/LICENSE) file for details.
+## Deployment
+```bash
+node commands.js # To deploy slash commands in all the servers the bot is in
+node index.js # To start the ticket-bot
+```
+
+# Made with 💜 by BlackKnight683. 
