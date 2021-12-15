@@ -132,11 +132,11 @@ module.exports = {
         .addComponents(
           new client.discord.MessageButton()
           .setCustomId('confirm-close')
-          .setLabel('close')
+          .setLabel('Close')
           .setStyle('DANGER'),
           new client.discord.MessageButton()
           .setCustomId('no')
-          .setLabel('Cancel.')
+          .setLabel('Cancel')
           .setStyle('SECONDARY'),
         );
 
@@ -178,7 +178,7 @@ module.exports = {
               const embed = new client.discord.MessageEmbed()
                 .setColor('6d6ee8')
                 .setAuthor('Ticket', 'https://i.imgur.com/oO5ZSRK.png')
-                .setDescription('```Controls for the ticket```')
+                .setDescription('```Ticket Summary```')
                 .setFooter(`${client.user.tag} || github.com/blackknight683`, client.user.displayAvatarURL())
                 .setTimestamp();
 
@@ -186,7 +186,7 @@ module.exports = {
                 .addComponents(
                   new client.discord.MessageButton()
                   .setCustomId('delete-ticket')
-                  .setLabel('Delete the ticket.')
+                  .setLabel('Delete')
                   .setEmoji('🗑️')
                   .setStyle('DANGER'),
                 );
