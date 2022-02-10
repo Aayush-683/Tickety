@@ -37,9 +37,9 @@ module.exports = {
 
         const embed = new client.discord.MessageEmbed()
           .setColor('6d6ee8')
-          .setAuthor(`${interaction.user.username}'s Ticket`, 'https://i.imgur.com/oO5ZSRK.png')
+          .setAuthor({name: `${interaction.user.username}'s Ticket`, iconURL: 'https://i.imgur.com/oO5ZSRK.png'})
           .setDescription('Select the category of your ticket')
-          .setFooter(`${client.user.tag} || github.com/blackknight683`, client.user.displayAvatarURL())
+          .setFooter(`{name: ${client.user.tag} || github.com/blackknight683`, iconURL: client.user.displayAvatarURL()})
           .setTimestamp();
 
         const row = new client.discord.MessageActionRow()
@@ -82,9 +82,9 @@ module.exports = {
               msg.delete().then(async () => {
                 const embed = new client.discord.MessageEmbed()
                   .setColor('6d6ee8')
-                  .setAuthor('Ticket', interaction.user.displayAvatarURL())
+                  .setAuthor({name: 'Ticket', iconURL: interaction.user.displayAvatarURL()})
                   .setDescription(`<@!${interaction.user.id}> Created a ticket with issues regarding \`${i.values[0]}\``)
-                  .setFooter(`${client.user.tag} || github.com/blackknight683`, client.user.displayAvatarURL())
+                  .setFooter({text: `${client.user.tag} || github.com/blackknight683`, iconURL: client.user.displayAvatarURL()})
                   .setTimestamp();
 
                 const row = new client.discord.MessageActionRow()
@@ -177,9 +177,9 @@ module.exports = {
             .then(async () => {
               const embed = new client.discord.MessageEmbed()
                 .setColor('6d6ee8')
-                .setAuthor('Ticket', 'https://i.imgur.com/oO5ZSRK.png')
+                .setAuthor({name: 'Ticket', iconURL: 'https://i.imgur.com/oO5ZSRK.png'})
                 .setDescription('```Ticket Summary```')
-                .setFooter(`${client.user.tag} || github.com/blackknight683`, client.user.displayAvatarURL())
+                .setFooter(`{text: ${client.user.tag} || github.com/blackknight683`, iconURL: client.user.displayAvatarURL()})
                 .setTimestamp();
 
               const row = new client.discord.MessageActionRow()
@@ -234,17 +234,17 @@ module.exports = {
         var paste = new PrivateBinClient("https://privatebin.net/");
         var result = await paste.uploadContent(a, {uploadFormat: 'markdown'})
             const embed = new client.discord.MessageEmbed()
-              .setAuthor('Ticket Logs', 'https://i.imgur.com/oO5ZSRK.png')
+              .setAuthor({name: 'Ticket Logs', iconURL: 'https://i.imgur.com/oO5ZSRK.png'})
               .setDescription(`📰 Logs for ticket \`${chan.id}\` | created by <@!${chan.topic}> | closed by <@!${interaction.user.id}>\n\nLogs: [**Click here to see the logs**](${getPasteUrl(result)})`)
               .setColor('2f3136')
-              .setFooter("This log will be deleted in 24 hrs!")
+              .setFooter({text: "This log will be deleted in 24 hrs!"})
               .setTimestamp();
 
             const embed2 = new client.discord.MessageEmbed()
-              .setAuthor('Ticket Logs', 'https://i.imgur.com/oO5ZSRK.png')
+              .setAuthor({name: 'Ticket Logs', iconURL: 'https://i.imgur.com/oO5ZSRK.png'})
               .setDescription(`📰 Logs for ticket \`${chan.id}\`: [**Click here to see the logs**](${getPasteUrl(result)})`)
               .setColor('2f3136')
-              .setFooter("This log will be deleted in 24 hrs!")
+              .setFooter({text: "This log will be deleted in 24 hrs!"})
               .setTimestamp();
 
             client.channels.cache.get(client.config.logsTicket).send({
