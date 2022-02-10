@@ -39,7 +39,7 @@ module.exports = {
           .setColor('6d6ee8')
           .setAuthor({name: `${interaction.user.username}'s Ticket`, iconURL: 'https://i.imgur.com/oO5ZSRK.png'})
           .setDescription('Select the category of your ticket')
-          .setFooter(`{name: ${client.user.tag} || github.com/blackknight683`, iconURL: client.user.displayAvatarURL()})
+          .setFooter({text: `${client.user.tag} || github.com/blackknight683`, iconURL: client.user.displayAvatarURL()})
           .setTimestamp();
 
         const row = new client.discord.MessageActionRow()
