@@ -28,7 +28,7 @@ module.exports = {
             deny: ['VIEW_CHANNEL'],
           },
         ],
-        type: 'text',
+        type: "GUILD_TEXT",
       }).then(async c => {
         interaction.reply({
           content: `Ticket created! <#${c.id}>`,
